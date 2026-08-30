@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver en Realidad Aumentada</title>
+    <!-- Importa el componente oficial de Google -->
+    <script type="module" src="https://googleapis.com"></script>
+    <style>
+        body { margin: 0; padding: 0; background-color: #f0f0f0; }
+        model-viewer { width: 100vw; height: 100vh; }
+    </style>
+</head>
+<body>
+
+    <!-- Cambia "tu-archivo.glb" por el nombre EXACTO de tu modelo subido -->
+    <model-viewer src="BikeSuroAR.glb" 
+                  ar 
+                  ar-modes="webxr scene-viewer quick-look" 
+                  camera-controls 
+                  touch-action="pan-y" 
+                  shadow-intensity="1">
+    </model-viewer>
+
+</body>
+</html>
