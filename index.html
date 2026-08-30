@@ -1,10 +1,10 @@
-<html<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prueba de Realidad Aumentada</title>
-    <!-- Importación oficial directa -->
+    <title>BikeSuro AR</title>
+    <!-- Cargamos la versión estable del visor -->
     <script type="module" src="https://googleapis.com"></script>
     <style>
         body, html { margin: 0; padding: 0; width: 100%; height: 100%; background-color: #f3f4f6; }
@@ -12,9 +12,9 @@
     </style>
 </head>
 <body>
-     <h1>Mi objeto 3D 3</h1>
-    <!-- Usamos el astronauta oficial para comprobar que tu link de GitHub funciona -->
-    <model-viewer src="https://modelviewer.dev" 
+
+    <!-- Llamamos directamente al archivo de tu bicicleta sin rutas raras -->
+    <model-viewer src="BikeSuroAR.glb" 
                   ar 
                   ar-modes="webxr scene-viewer quick-look" 
                   camera-controls 
