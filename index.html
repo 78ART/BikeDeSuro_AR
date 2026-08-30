@@ -3,23 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ver BikeSuro en AR</title>
-    <!-- Importa el visor oficial de Google -->
+    <title>Mi Objeto AR</title>
+    <!-- 1. AQUÍ LA LIBRERÍA OBLIGATORIA -->
     <script type="module" src="https://googleapis.com"></script>
     <style>
-        body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background-color: #eceff1; }
-        model-viewer { width: 100vw; height: 100vh; }
+        /* 2. AQUÍ EL TAMAÑO PARA QUE NO MIDA 0 PÍXELES */
+        model-viewer {
+            width: 100%;
+            height: 500px; /* Dale una altura fija de prueba */
+            background-color: #f0f0f0; /* Fondo gris para ver si el recuadro existe */
+            display: block;
+        }
     </style>
 </head>
 <body>
-    <H1>OBSERVA ESTO</H1>
-    <!-- El código busca el archivo en la misma raíz de tu repositorio -->
+
+    <h1>Mi objeto 3D</h1>
+
+    <!-- 3. EL VISOR CON TU ARCHIVO -->
     <model-viewer src="./BikeSuroAR.glb" 
                   ar 
                   ar-modes="webxr scene-viewer quick-look" 
                   camera-controls 
-                  touch-action="pan-y" 
-                  shadow-intensity="1"
+                  shadow-intensity="1" 
                   auto-rotate>
     </model-viewer>
 
